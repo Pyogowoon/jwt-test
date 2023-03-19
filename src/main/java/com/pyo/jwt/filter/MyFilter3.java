@@ -20,9 +20,9 @@ public class MyFilter3 implements Filter {
             System.out.println("포스트 요청됨");
             String headerAuth = req.getHeader("Authorization");
             System.out.println(headerAuth);
-            System.out.println("필터1");
+            System.out.println("필터3");
 
-            if (headerAuth.equals("cos")) {
+            if (headerAuth.equals("ssar")) {
                 chain.doFilter(req, res);
             } else {
                 PrintWriter out = res.getWriter();
